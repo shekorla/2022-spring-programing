@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
@@ -60,12 +60,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-
-project for keeping notes/notes from class/Library/Artifacts/03/
-
-project for keeping notes/notes from class/Library/Artifacts/04/
-
-project for keeping notes/notes from class/Library/Artifacts/05/
-
-project for keeping notes/notes from class/Library/
