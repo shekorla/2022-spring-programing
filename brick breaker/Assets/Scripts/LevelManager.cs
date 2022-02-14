@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour {
 	}
     void Update()
     {
-        scoretxt.text="score:" + score.ToString();
+        scoretxt.text="Score:" + score.ToString();
     }
 
 }
