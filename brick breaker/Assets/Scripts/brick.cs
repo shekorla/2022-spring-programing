@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.Events;
 
-public class brick : MonoBehaviour {
 
+public class brick : MonoBehaviour
+{
+
+    public UnityEvent hitEv;
     public int maxHits;
     public int currentHits;
-    public LevelManager LM;
     public brickBuilder Boss;
     public vocalize voca;
     public bool des;
@@ -13,8 +15,7 @@ public class brick : MonoBehaviour {
     // Use this for initialization
     void Start () {
 	    currentHits = maxHits;
-        LM = GameObject.FindObjectOfType<LevelManager>();
-        Boss=Object.FindObjectOfType<brickBuilder>(); ;
+        Boss=Object.FindObjectOfType<brickBuilder>(); 
         des = false;
     }
 	
@@ -52,7 +53,7 @@ public class brick : MonoBehaviour {
     {
         if (collider.gameObject.CompareTag("Player")) //you got hit
         {
-            LM.score += maxHits;
+            hitEv.Invoke();
             currentHits = currentHits - 1;
             if (currentHits <= 0)
             {

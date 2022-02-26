@@ -15,9 +15,13 @@ public class moneySO: ScriptableObject
             moneyVal = moneyVal - amount;
         }
     }
-
-    public void levelEnd(int score)
+    public void levelEnd(moneySO score)
     {
-        moneyVal = moneyVal + ((score / 3) * 10);
+        moneyVal = moneyVal + ((score.moneyVal / 3)*10);
+    }
+
+    public void resetVal()
+    {
+        moneyVal = 0;
     }
 }

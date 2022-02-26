@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -49025617
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dc1b584d0579cbc4893e4af5f444f109, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e633edab1e4545843bb0eb44cd9f7095, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,5 +137,55 @@ MonoBehaviour:
   paddle: {fileID: 0}
   haslaunched: 0
   launchcoord: {x: 20, y: 100}
-  LM: {fileID: 0}
   voca: {fileID: 0}
+  startEv:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e80154ec59261d345ab83fc71b26c69e, type: 2}
+        m_TargetAssemblyTypeName: changeSprite, Assembly-CSharp
+        m_MethodName: getArt
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 73235e0978357894caa1f25ec2c1ced8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ArtSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e80154ec59261d345ab83fc71b26c69e, type: 2}
+        m_TargetAssemblyTypeName: changeSprite, Assembly-CSharp
+        m_MethodName: getObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9154110241736614627}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e80154ec59261d345ab83fc71b26c69e, type: 2}
+        m_TargetAssemblyTypeName: changeSprite, Assembly-CSharp
+        m_MethodName: changeGiven
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 13658d4f5bd353d4bb3db4a92d57c9e8, type: 2}
+        m_TargetAssemblyTypeName: moneySO, Assembly-CSharp
+        m_MethodName: resetVal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

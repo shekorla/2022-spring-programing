@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class brickBuilder : MonoBehaviour
 {
-    public int brickCount=0, score,level=0, rowNum=1,colNum=1;
+    public int brickCount=0,level=0, rowNum=1,colNum=1;
     public GameObject[] listOfBricks;
     public GameObject player;
     
@@ -21,6 +21,9 @@ public class brickBuilder : MonoBehaviour
     //4hit brick=4points etc.
     public void BuildBricks(int level)
     {
+        if (level>=13) {//the screen can only hold 13 rows of blocks
+            level = 13;
+        }
         for (int i = 0; i < level; i++)//spawn 4 blocks and move on
         {
             whereSpawn(1,i);
@@ -57,11 +60,11 @@ public class brickBuilder : MonoBehaviour
     public void whereSpawn(int colNum,int rowNum)
     {
         var loc = new Vector3(0, 0, 0);
-        if (colNum==4) { loc.x = (float) 7.1; }
-        if (colNum==3) { loc.x = (float) 5.7; }
-        if (colNum==2) { loc.x = (float) 4.3; }
-        if (colNum==1) { loc.x = (float) 2.9; }
-        loc.y = (float) (13.25 - (rowNum * 1));
+        if (colNum==4) { loc.x = (float) -48; }//far left xval
+        if (colNum==3) { loc.x = (float) -16; }//center left xval
+        if (colNum==2) { loc.x = (float) 16; }//center right xval
+        if (colNum==1) { loc.x = (float) 48; }//far right xval
+        loc.y = (float) (126 - (rowNum * 13));//start at the max height and work down
         makeOneBrick(loc);
     }
 

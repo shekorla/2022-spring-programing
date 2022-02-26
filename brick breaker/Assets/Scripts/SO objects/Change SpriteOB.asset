@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f48eafa601e9e7147bad9c620403eba1, type: 3}
-  m_Name: DefaultPlayer
+  m_Script: {fileID: 11500000, guid: 65e04089a5d50c04ebbe20152fecd444, type: 3}
+  m_Name: Change SpriteOB
   m_EditorClassIdentifier: 
-  myColor: {r: 0.754717, g: 0, b: 0, a: 0}
-  mySprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  myName: Default
+  newSpr: {fileID: 0}
+  putHere: {fileID: 0}
