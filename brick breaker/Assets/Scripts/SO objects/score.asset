@@ -13,3 +13,18 @@ MonoBehaviour:
   m_Name: score
   m_EditorClassIdentifier: 
   moneyVal: 0
+  changedEv:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7054817803462420964, guid: 122c9b61b89c62a4190ceea872bb136c, type: 3}
+        m_TargetAssemblyTypeName: DisplayMoney, Assembly-CSharp
+        m_MethodName: NewMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

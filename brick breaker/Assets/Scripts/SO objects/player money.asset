@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: player money
   m_EditorClassIdentifier: 
   moneyVal: 20
+  changedEv:
+    m_PersistentCalls:
+      m_Calls: []

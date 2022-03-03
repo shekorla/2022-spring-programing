@@ -8,19 +8,22 @@ public class DisplayMoney : MonoBehaviour
     public moneySO sObj;
     public Text myText;
     public bool monScore;//true is money, false is score
-    public void Start()
-    {
-        NewMoney();
-    }
+
+    private string introTxt;
+     public void Start()
+     {
+         NewMoney();
+     }
 
     public void NewMoney() {
         if (monScore==true)
         {
-            myText.text = "$" + sObj.moneyVal.ToString();
+            introTxt = "$";
         }
         if (monScore==false)
         {
-            myText.text = "SCORE:" + sObj.moneyVal.ToString();
+            introTxt = "SCORE:";
         }
+        myText.text = introTxt + sObj.moneyVal.ToString();
     }
 }

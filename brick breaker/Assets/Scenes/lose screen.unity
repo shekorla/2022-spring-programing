@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -637}
+  m_AnchoredPosition: {x: 0, y: -481}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63489123
@@ -368,7 +368,7 @@ RectTransform:
   m_GameObject: {fileID: 822728645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.20281999, y: 0.20281999, z: 0.20281999}
   m_Children:
   - {fileID: 869067660}
   - {fileID: 63489122}
@@ -377,7 +377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 540, y: 960}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 720, y: 1480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &822728647
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18867922, g: 0.06789242, b: 0, a: 1}
+  m_Color: {r: 0.764151, g: 0.21974194, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -552,15 +552,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1232754372147741065, guid: 6b43a42476fc0984a9c3c960a03659a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.98496
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1232754372147741065, guid: 6b43a42476fc0984a9c3c960a03659a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.418592
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1232754372147741065, guid: 6b43a42476fc0984a9c3c960a03659a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -52.4995
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 1232754372147741065, guid: 6b43a42476fc0984a9c3c960a03659a1, type: 3}
       propertyPath: m_LocalRotation.w

@@ -132,7 +132,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7054817803462420964, guid: 122c9b61b89c62a4190ceea872bb136c, type: 3}
+        m_TargetAssemblyTypeName: DisplayMoney, Assembly-CSharp
+        m_MethodName: NewMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -141,4 +153,3 @@ MonoBehaviour:
   currentHits: 0
   Boss: {fileID: 0}
   voca: {fileID: 114000012922960714, guid: f0c42015b19084a44890d898b82e9153, type: 3}
-  des: 0

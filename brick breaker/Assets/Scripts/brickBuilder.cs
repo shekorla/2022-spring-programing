@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,7 +10,6 @@ public class brickBuilder : MonoBehaviour
     private void Start()
     {
         listOfBricks = Resources.LoadAll<GameObject>("BrickTypes");
-        
         BuildBricks(level);
     }
     //build a random array of bricks

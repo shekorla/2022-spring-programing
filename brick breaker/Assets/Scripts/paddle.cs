@@ -1,14 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class paddle : MonoBehaviour
 {
     float mousePos;
-    double offset=1;
+    double offset=-10;
     private Vector3 paddlePos;
     public static bool simulateMouseWithTouches = true;
-    //bool upgrade = false;
     void Update()
     {
         mousePos = Input.mousePosition.x / Screen.width * 50;
@@ -16,14 +13,4 @@ public class paddle : MonoBehaviour
         this.transform.position = paddlePos;
     }
 
-    void OnTriggerEnter2D(Collider2D Collision)
-    {
-        //if (Collision.gameObject.CompareTag("powerup"))
-        {
-            this.transform.localScale = new Vector3(10,1,1);
-            //upgrade = true;
-        }
-
-    }
-    
 }

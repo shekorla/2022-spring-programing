@@ -29,8 +29,9 @@ public class ball : MonoBehaviour {
         }
 	}
 
-    public void stuck() {
-        this.GetComponent<Rigidbody2D>().AddTorque(10);//turn 10 degrees if you get stuck
+    public void Dest()
+    {
+        Destroy(this);
     }
     void OnCollisionEnter2D(Collision2D collider) {
         voca.polka = true;
