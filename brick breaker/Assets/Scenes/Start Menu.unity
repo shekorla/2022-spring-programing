@@ -979,7 +979,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to Brick Breaker!
+  m_Text: Welcome to Block Breaker!
 --- !u!222 &869067659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Break all the bricks to win.
+  m_Text: Break all the blocks to win.
 --- !u!222 &1654444588
 CanvasRenderer:
   m_ObjectHideFlags: 0
