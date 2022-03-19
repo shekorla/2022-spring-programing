@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46dae1e7a4ced384ab43774a6c30d838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEv:
+  deathEv:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 13658d4f5bd353d4bb3db4a92d57c9e8, type: 2}
@@ -149,7 +149,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2296685138640398497, guid: d8167da2a7e5a444babe38f709c3ab24, type: 3}
+        m_TargetAssemblyTypeName: vocalize, Assembly-CSharp
+        m_MethodName: playClip
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 14bca06265cb28049a2602b6b4f4e858, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   maxHits: 3
   currentHits: 0
   Boss: {fileID: 0}
-  voca: {fileID: 114000012922960714, guid: f0c42015b19084a44890d898b82e9153, type: 3}

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
 public class musicManager : MonoBehaviour {
     static musicManager instance = null;
@@ -8,16 +8,25 @@ public class musicManager : MonoBehaviour {
 	void Start () {
         if (instance != null){
             Destroy(gameObject);
-            print("dead");
         }
         else {
             instance = this;
             GameObject.DontDestroyOnLoad(gameObject);
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    public void playClip(AudioClip clip) {
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
+        new WaitForSecondsRealtime(2);
+    }
+    public void volChange(Slider newVol)
+    {
+        AudioSource music = this.GetComponentInChildren<AudioSource>();
+        music.volume = newVol.value;
+        if (music.volume==0) {
+            music.mute = true;
+        }else {
+            music.mute = false;
+        }
+    }
 }

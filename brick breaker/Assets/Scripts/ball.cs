@@ -6,7 +6,6 @@ public class ball : MonoBehaviour {
     public paddle paddle;
     public bool haslaunched;
     public Vector2 launchcoord;
-    public vocalize voca;
     public UnityEvent startEv;
 
     private Vector3 paddToBallVector;
@@ -28,13 +27,7 @@ public class ball : MonoBehaviour {
             }
         }
 	}
-
-    public void Dest()
-    {
+    public void Dest() {
         Destroy(this);
-    }
-    void OnCollisionEnter2D(Collision2D collider) {
-        voca.polka = true;
-        voca.Up();
     }
 }

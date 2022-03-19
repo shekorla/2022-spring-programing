@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9154110241736614653}
   - component: {fileID: 9154110241736614652}
   - component: {fileID: 9154110241736614648}
+  - component: {fileID: 56656860326271482}
   m_Layer: 0
   m_Name: ball
   m_TagString: Player
@@ -137,7 +138,6 @@ MonoBehaviour:
   paddle: {fileID: 0}
   haslaunched: 0
   launchcoord: {x: 20, y: 100}
-  voca: {fileID: 0}
   startEv:
     m_PersistentCalls:
       m_Calls:
@@ -201,3 +201,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &56656860326271482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9154110241736614627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9eb8f3189c963499f7c8bd12922f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2296685138640398497, guid: d8167da2a7e5a444babe38f709c3ab24, type: 3}
+        m_TargetAssemblyTypeName: vocalize, Assembly-CSharp
+        m_MethodName: playClip
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 198aaeaace7214c478488960ab2c48da, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collidePlrEvent:
+    m_PersistentCalls:
+      m_Calls: []
