@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 [CreateAssetMenu]
 public class shopItemSO : ScriptableObject
 {
@@ -7,4 +9,5 @@ public class shopItemSO : ScriptableObject
     public bool equipped = false;
     public Sprite mySprite;
     public string myType;
+    public Text myText;
 }

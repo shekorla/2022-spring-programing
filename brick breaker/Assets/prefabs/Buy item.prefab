@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7891234629260387052}
   - component: {fileID: 8306068590341658275}
   - component: {fileID: 7515402466123418014}
-  - component: {fileID: 4229750403445204884}
+  - component: {fileID: 53068993624187689}
   m_Layer: 5
   m_Name: Buy item
   m_TagString: Untagged
@@ -123,19 +123,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4229750403445204884}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ShopSC, Assembly-CSharp
         m_MethodName: whenTapped
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 9e9bf6380ad7b9f4a9af09c7dd25fc8b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: shopItemSO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4229750403445204884
+--- !u!114 &53068993624187689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,175 +144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279534399445705331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df1f1666d3c442245bd9bb0b28fe7e0f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce211fd2acd95fe4d9d6ac96acc4a83b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EquipEv:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4229750403445204884}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: equipMe
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 73235e0978357894caa1f25ec2c1ced8, type: 2}
-        m_TargetAssemblyTypeName: ArtArraySO, Assembly-CSharp
-        m_MethodName: changeCurrent
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: e633edab1e4545843bb0eb44cd9f7095, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: otherEquip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  buyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4229750403445204884}
-        m_TargetAssemblyTypeName: ShopItemSC, Assembly-CSharp
-        m_MethodName: canBuy
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1d938a245e7372f4885d5c6741b55367, type: 2}
-          m_ObjectArgumentAssemblyTypeName: moneySO, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 1d938a245e7372f4885d5c6741b55367, type: 2}
-        m_TargetAssemblyTypeName: moneySO, Assembly-CSharp
-        m_MethodName: subMoney
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  cost: 0
-  locked: 1
-  equipped: 0
-  myText: {fileID: 8782994219258034075}
+  myData: {fileID: 11400000, guid: 9e9bf6380ad7b9f4a9af09c7dd25fc8b, type: 2}
+  selfText: {fileID: 8782994219258034075}
 --- !u!1 &4341863013180761303
 GameObject:
   m_ObjectHideFlags: 0
