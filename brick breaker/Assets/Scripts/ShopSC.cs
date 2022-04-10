@@ -1,15 +1,24 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
 public class ShopSC : MonoBehaviour
 {
-    public shopItemSO[] allInShop;
+    public shopItemSO[] BallInShop, PaddleInShop, BrickInShop;
+    public UnityEvent equipEv;
     public moneySO moneyS;
     public Text myText;
 
-    public void Start() {
-        foreach (var item in allInShop) {
+    private void Start()
+    {
+        UpdateAllVis(BallInShop);
+        UpdateAllVis(PaddleInShop);
+        UpdateAllVis(BrickInShop);
+    }
+
+    public void UpdateAllVis(shopItemSO[] typeList) {
+        foreach (var item in typeList) {
             if (item.locked == false) {
                 if (item.equipped == true) {
                     item.myText.text = "Equipped";
@@ -28,16 +37,39 @@ public class ShopSC : MonoBehaviour
         if (item.locked==true) {
             if(moneyS.moneyVal>=item.cost) {
                 item.locked = false;
-                equip(item);
+                if (item.myType=="ball")
+                {
+                    equip(item, BallInShop);
+                }
+                if (item.myType=="brick")
+                {
+                    equip(item, BrickInShop);
+                }
+                if (item.myType=="paddle")
+                {
+                    equip(item, PaddleInShop);
+                }
                 moneyS.subMoney(item.cost);
             }
         }
         else {
-            equip(item);
+            if (item.myType=="ball")
+            {
+                equip(item, BallInShop);
+            }
+            if (item.myType=="brick")
+            {
+                equip(item, BrickInShop);
+            }
+            if (item.myType=="paddle")
+            {
+                equip(item, PaddleInShop);
+            }
+            
         }
     }
-    public void equip(shopItemSO item) {
-        foreach (var option in allInShop) {
+    public void equip(shopItemSO item, shopItemSO[] typeList) {
+        foreach (var option in typeList) {
             if (item==option) {
                 item.equipped = true;
                 item.myText.text = "Equipped"; 
@@ -47,5 +79,6 @@ public class ShopSC : MonoBehaviour
                 item.myText.text = "Tap to Equip";
             }
         }
+        equipEv.Invoke();
     }
 }

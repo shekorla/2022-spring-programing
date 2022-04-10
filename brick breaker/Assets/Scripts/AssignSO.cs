@@ -9,8 +9,10 @@ public class AssignSO : MonoBehaviour
     public Text selfText;
     
     // Start is called before the first frame update
-    void Start()
+    public void updateData()
     {
         myData.myText = selfText;
+        selfText.text = myData.myText.text;
+        Debug.Log(myData);
     }
 }

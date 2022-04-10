@@ -15,7 +15,7 @@ MonoBehaviour:
   cost: 10
   identityVal: 0
   locked: 0
-  equipped: 0
+  equipped: 1
   mySprite: {fileID: 21300000, guid: e633edab1e4545843bb0eb44cd9f7095, type: 3}
   myType: Ball
   myText: {fileID: 0}
