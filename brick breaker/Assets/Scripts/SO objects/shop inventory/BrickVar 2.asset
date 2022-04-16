@@ -18,3 +18,4 @@ MonoBehaviour:
   equipped: 0
   mySprite: {fileID: 21300000, guid: 23b92e8ba083328439e48b8fb6ffe898, type: 3}
   myType: Brick
+  myloc: {x: 30, y: -18, z: 0}

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3a982572a20e56447a4292762677572d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - plrMoney: {fileID: 11400000, guid: 1d938a245e7372f4885d5c6741b55367, type: 2}
+  - ShopObj: {fileID: 234471581185639460, guid: ba3eeb1ddcfa38744b7261c8ca9d8da4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

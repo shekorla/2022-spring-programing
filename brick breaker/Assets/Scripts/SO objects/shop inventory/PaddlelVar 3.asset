@@ -18,3 +18,4 @@ MonoBehaviour:
   equipped: 0
   mySprite: {fileID: 21300000, guid: ab8f91445ad8ed0459b256999f8ccc5e, type: 3}
   myType: Paddle
+  myloc: {x: -30, y: -90, z: 0}

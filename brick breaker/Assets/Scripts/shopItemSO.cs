@@ -9,5 +9,5 @@ public class shopItemSO : ScriptableObject
     public bool equipped = false;
     public Sprite mySprite;
     public string myType;
-    public Text myText;
+    public Vector3 myloc;
 }
