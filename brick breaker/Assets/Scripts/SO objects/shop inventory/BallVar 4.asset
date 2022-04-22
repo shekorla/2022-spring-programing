@@ -17,5 +17,5 @@ MonoBehaviour:
   locked: 1
   equipped: 0
   mySprite: {fileID: 21300000, guid: 020d4f02b8b14c84d8beb269ae82eb62, type: 3}
-  myType: Ball
+  myType: 1
   myloc: {x: -40, y: 43, z: 0}

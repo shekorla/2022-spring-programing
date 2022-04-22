@@ -1,51 +1,87 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class panelShopCode : MonoBehaviour
 {
-    private Image pic;
+    private SpriteRenderer pic;
     private Text itemLabel;
     private Button buttn;
     [HideInInspector] public shopItemSO item;
     [HideInInspector] public moneySO money;
     private UnityAction buy;
-    public UnityAction checkInvent;
+    
+    public UnityEvent checkInvent;
+    public ArtSO ballart, brickart, paddleart;
 
     private void Awake()
     {
-        pic = GetComponentInChildren<Image>();
+        pic = GetComponentInChildren<SpriteRenderer>();
         itemLabel = GetComponentInChildren<Text>();
         buttn = GetComponentInChildren<Button>();
-        buy+= buyAction;
+        buy+=buyAction;
         //checkInvent.Raise += checkButton;
         buttn.onClick.AddListener(buy);
     }
 
     private void Start()
     {
-        setUpShop();
+        setUpSelf();
     }
 
-    private void setUpShop()
+    private void setUpSelf()
     {
         pic.sprite = item.mySprite;
-        itemLabel.text = item.cost.ToString();
+        itemLabel.text = "$ "+item.cost.ToString();
         checkButton();
     }
 
     private void checkButton()
     {
         buttn.gameObject.SetActive(true);
-        buttn.interactable = money.moneyVal >= item.cost;
-        buttn.gameObject.SetActive(!item.locked);
+        if (item.locked==true) {
+            if ( money.moneyVal >= item.cost) {
+                buttn.interactable = true;
+            }
+            else {
+                buttn.interactable = false;
+            }
+        }
+        else
+        {
+            buttn.interactable = true;
+        }
     }
 
     public void buyAction()
     {
-        item.locked = false;
-        money.subMoney(item.cost);
+        if (item.locked==true)
+        {
+            money.subMoney(item.cost);
+            item.locked = false;
+        }
+        switch (item.myType)//ball is 1, brick is 2, paddle is 3
+        {
+            case 1:
+                ballart.currentSprite= item.mySprite;
+                break;
+            case 2:
+                brickart.currentSprite = item.mySprite;
+                break;
+            case 3:
+                paddleart.currentSprite= item.mySprite;
+                break;
+        }
         checkInvent.Invoke();
     }
+
+    public void equip()
+    {
+        itemLabel.text = " ";
+    }
+    public void remove()
+    {
+        itemLabel.text = "Tap";
+    }
+    
 }

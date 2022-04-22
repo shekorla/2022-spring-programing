@@ -17,5 +17,5 @@ MonoBehaviour:
   locked: 1
   equipped: 0
   mySprite: {fileID: 21300000, guid: e0123032f0c8ad3448e99d7b8bab5e08, type: 3}
-  myType: Paddle
+  myType: 3
   myloc: {x: 30, y: -90, z: 0}

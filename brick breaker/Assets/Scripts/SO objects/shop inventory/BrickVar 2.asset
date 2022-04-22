@@ -17,5 +17,5 @@ MonoBehaviour:
   locked: 1
   equipped: 0
   mySprite: {fileID: 21300000, guid: 23b92e8ba083328439e48b8fb6ffe898, type: 3}
-  myType: Brick
+  myType: 2
   myloc: {x: 30, y: -18, z: 0}

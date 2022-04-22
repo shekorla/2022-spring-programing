@@ -6,6 +6,7 @@ public class changeSprite : ScriptableObject
     public ArtSO newArt;
     public GameObject change;
 
+    //yes its rediculous to have three funtions, but it makes it call from the editor
     public void getArt(ArtSO newArt)
     {
         newArt = this.newArt;
@@ -13,6 +14,7 @@ public class changeSprite : ScriptableObject
     public void getObj(GameObject change)
     {
         change = this.change;
+        changeGiven();
     }
     
     public void changeGiven ()
